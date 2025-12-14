@@ -1,0 +1,351 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f4f6f8;
+  padding: 10px;
+  margin: 0;
+}
+
+/* App container */
+#root {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  word-wrap: break-word;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  word-wrap: break-word;
+}
+
+/* Form styling */
+form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 16px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+/* Form button container */
+form button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  min-height: 44px;
+  touch-action: manipulation;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: table;
+  border: 1px solid #ddd;
+}
+
+table thead {
+  background-color: #3498db;
+  color: white;
+  display: table-header-group;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  display: table-cell;
+  border: 1px solid #ddd;
+}
+
+table th {
+  border-bottom: 2px solid #2980b9;
+}
+
+table tbody {
+  display: table-row-group;
+}
+
+table tr {
+  display: table-row;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Action buttons in table */
+table td button {
+  padding: 8px 12px;
+  font-size: 14px;
+  min-height: 36px;
+  white-space: nowrap;
+}
+
+table button[data-label="Edit"] {
+  background-color: #27ae60;
+  margin-right: 8px;
+}
+
+table button[data-label="Edit"]:hover {
+  background-color: #229954;
+}
+
+table button[data-label="Delete"] {
+  background-color: #e74c3c;
+}
+
+table button[data-label="Delete"]:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive Styles */
+
+/* Tablet and below */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  form {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  form input {
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  button {
+    padding: 12px 18px;
+    font-size: 15px;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  form button {
+    width: auto;
+    min-width: 120px;
+  }
+
+  table th,
+  table td {
+    padding: 10px 8px;
+    font-size: 14px;
+  }
+
+  table td button {
+    padding: 8px 12px;
+    font-size: 13px;
+    margin-right: 5px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    padding: 0 5px;
+  }
+
+  h2 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  form {
+    padding: 12px;
+    margin-bottom: 15px;
+  }
+
+  form input {
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  button {
+    padding: 12px 16px;
+    font-size: 15px;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  form button {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  /* Responsive table for mobile */
+  table,
+  table thead,
+  table tbody,
+  table th,
+  table td,
+  table tr {
+    display: block;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table tr {
+    margin-bottom: 15px;
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    text-align: right;
+  }
+
+  table td:last-child {
+    border-bottom: none;
+    padding-top: 15px;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+
+  table td:last-child::before {
+    content: '';
+    display: none;
+  }
+
+  table td button {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  table tbody tr:nth-child(even) {
+    background-color: white;
+  }
+
+  table tbody tr:nth-child(even) td {
+    background-color: transparent;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+  body {
+    padding: 8px;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  form {
+    padding: 10px;
+  }
+
+  form input {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  button {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+}
